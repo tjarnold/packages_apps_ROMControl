@@ -808,6 +808,7 @@
     <string name="icon_with_text">Icon with text</string>
     <string name="icon_with_centered_text">Icon with centered text</string>
     <string name="circlemod">CircleMOD</string>
+    <string name="rb_battery">RootBox Circle</string>
 
     <!-- NavBar -->
     <string name="right">Right</string>
