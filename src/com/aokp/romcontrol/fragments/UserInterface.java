@@ -91,10 +91,10 @@ public class UserInterface extends AOKPPreferenceFragment implements OnPreferenc
     private static final CharSequence PREF_RAM_USAGE_BAR = "ram_usage_bar";
     private static final CharSequence PREF_IME_SWITCHER = "ime_switcher";
     private static final CharSequence PREF_STATUSBAR_BRIGHTNESS = "statusbar_brightness_slider";
-    private static final CharSequence PREF_USER_MODE_UI = "user_mode_ui";
+    //private static final CharSequence PREF_USER_MODE_UI = "user_mode_ui";
     private static final CharSequence PREF_HIDE_EXTRAS = "hide_extras";
     private static final CharSequence PREF_WAKEUP_WHEN_PLUGGED_UNPLUGGED = "wakeup_when_plugged_unplugged";
-    private static final CharSequence PREF_FORCE_DUAL_PANEL = "force_dualpanel";
+    //private static final CharSequence PREF_FORCE_DUAL_PANEL = "force_dualpanel";
     private static final CharSequence PREF_DISABLE_BOOTANIM = "disable_bootanimation";
     private static final CharSequence PREF_CUSTOM_BOOTANIM = "custom_bootanimation";
     private static final CharSequence PREF_NOTIFICATION_VIBRATE = "notification";
@@ -130,10 +130,10 @@ public class UserInterface extends AOKPPreferenceFragment implements OnPreferenc
     CheckBoxPreference mShowImeSwitcher;
     CheckBoxPreference mStatusbarSliderPreference;
     AlertDialog mCustomBootAnimationDialog;
-    ListPreference mUserModeUI;
+    //ListPreference mUserModeUI;
     CheckBoxPreference mHideExtras;
     CheckBoxPreference mWakeUpWhenPluggedOrUnplugged;
-    CheckBoxPreference mDualpane;
+    //CheckBoxPreference mDualpane;
     ListPreference mCrtMode;
     CheckBoxPreference mCrtOff;
     CheckBoxPreference mStatusBarHide;
@@ -237,17 +237,17 @@ public class UserInterface extends AOKPPreferenceFragment implements OnPreferenc
         mStatusBarHide.setChecked(Settings.System.getBoolean(mContentResolver,
                 Settings.System.STATUSBAR_HIDDEN, false));
 
-        mUserModeUI = (ListPreference) findPreference(PREF_USER_MODE_UI);
-        int uiMode = Settings.System.getInt(mContentResolver,
-                Settings.System.CURRENT_UI_MODE, 0);
-        mUserModeUI.setValue(Integer.toString(Settings.System.getInt(mContentResolver,
-                Settings.System.USER_UI_MODE, uiMode)));
-        mUserModeUI.setOnPreferenceChangeListener(this);
+        //mUserModeUI = (ListPreference) findPreference(PREF_USER_MODE_UI);
+        //int uiMode = Settings.System.getInt(mContentResolver,
+        //        Settings.System.CURRENT_UI_MODE, 0);
+        //mUserModeUI.setValue(Integer.toString(Settings.System.getInt(mContentResolver,
+        //        Settings.System.USER_UI_MODE, uiMode)));
+        //mUserModeUI.setOnPreferenceChangeListener(this);
 
-        mDualpane = (CheckBoxPreference) findPreference(PREF_FORCE_DUAL_PANEL);
-        mDualpane.setChecked(Settings.System.getBoolean(mContentResolver,
-                        Settings.System.FORCE_DUAL_PANEL, getResources().getBoolean(
-                        com.android.internal.R.bool.preferences_prefer_dual_pane)));
+        //mDualpane = (CheckBoxPreference) findPreference(PREF_FORCE_DUAL_PANEL);
+        //mDualpane.setChecked(Settings.System.getBoolean(mContentResolver,
+        //                Settings.System.FORCE_DUAL_PANEL, getResources().getBoolean(
+        //                com.android.internal.R.bool.preferences_prefer_dual_pane)));
 
         boolean isCrtOffChecked = (Settings.System.getBoolean(mContentResolver,
                         Settings.System.SYSTEM_POWER_ENABLE_CRT_OFF, true));
@@ -365,11 +365,11 @@ public class UserInterface extends AOKPPreferenceFragment implements OnPreferenc
                     Settings.System.HIDE_EXTRAS_SYSTEM_BAR,
                     ((TwoStatePreference) preference).isChecked());
             return true;
-        } else if (preference == mDualpane) {
-            Settings.System.putBoolean(mContentResolver,
-                    Settings.System.FORCE_DUAL_PANEL,
-                    ((TwoStatePreference) preference).isChecked());
-            return true;
+        //} else if (preference == mDualpane) {
+        //    Settings.System.putBoolean(mContentResolver,
+        //            Settings.System.FORCE_DUAL_PANEL,
+        //            ((TwoStatePreference) preference).isChecked());
+        //    return true;
         } else if (preference == mCustomBootAnimation) {
             openBootAnimationDialog();
             return true;
@@ -929,12 +929,12 @@ public class UserInterface extends AOKPPreferenceFragment implements OnPreferenc
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-       if (preference == mUserModeUI) {
-            Settings.System.putInt(mContentResolver,
-                    Settings.System.USER_UI_MODE, Integer.parseInt((String) newValue));
-            Helpers.restartSystemUI();
-            return true;
-                } else if (preference == mCrtMode) {
+       //if (preference == mUserModeUI) {
+       //     Settings.System.putInt(mContentResolver,
+       //             Settings.System.USER_UI_MODE, Integer.parseInt((String) newValue));
+       //     Helpers.restartSystemUI();
+       //     return true;
+       if (preference == mCrtMode) {
             int crtMode = Integer.valueOf((String) newValue);
             int index = mCrtMode.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
