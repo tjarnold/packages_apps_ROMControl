@@ -73,6 +73,10 @@
     <string name="title_show_torch_toggle">Mostrar interruptor de la linterna</string>
     <string name="title_show_airplane_toggle">Mostrar interruptor modo avión</string>
     <string name="title_show_navbar_hide">Mostrar interruptor de barra de navegación</string>
+    <string name="summary_show_navbar_hide">Si marca esta opción mostrara los interruptores para habilitar la barra de navegación y barra de estado</string>
+    <string name="title_show_volume_state_toggle">Mostrar estados de sonido</string>
+    <string name="summary_off_show_reboot_keyguard">Opción de reinicio no se mostrará en pantalla de bloqueo</string>
+    <string name="summary_on_show_reboot_keyguard">Opción de reinicio se mostrará en pantalla de bloqueo</string>
 
     <!-- Power Saving -->
     <string name="title_pref_powersaving_pref_mode">Activar ahorro de energía</string>
@@ -152,7 +156,15 @@
     <string name="show_overflow_toast_disable">El botón de menú puede ser visible hasta que se reinicien las aplicaciones</string>
     <string name="notification_show_wifi_ssid_title">Ver nombre de conección wifi</string>
     <string name="notification_show_wifi_ssid_summary">Mostrar el nombre de la conección actual de wifi</string>
-
+    <string name="rotate_270_title">>Permitir rotación de 270 grados</string>
+    <string name="rotate_270_summary">Permite a su dispositivo rotar 270 grados!</string>
+    <string name="system_power_crt_screen_off_title">Efecto CRT al apagar pantalla</string>
+    <string name="system_power_crt_screen_off_summary">La pantalla se animará con un haz de electrones cuando se apaga.</string>
+    <string name="system_power_crt_mode_title">Modo Animación CRT</string>
+    <string name="system_power_crt_mode_dialog_title">Selección Animación CRT</string>
+    <string name="system_power_crt_mode_horizontal">Retrato horizontal</string>
+    <string name="system_power_crt_mode_vertical">Retrato vertical</string>
+    <string name="system_power_crt_mode_both">Depende de orientación</string>
 
     <!-- LCD Density -->
     <string name="lcd_density_title">Densidad LCD</string>
@@ -191,8 +203,8 @@
     <string name="enabled_toggles_title">Activar interruptores</string>
     <string name="enabled_toggles_summary">Interruptores que se visualizaran</string>
     <string name="toggles_display_dialog">Escoger interruptores a visualizar</string>
-    <string name="toggles_per_row_title">Toggles por fila</string>
-    <string name="toggles_per_row_summary">Elija cuántos toggles mostrar por fila</string>
+    <string name="toggles_per_row_title">Interruptores por fila</string>
+    <string name="toggles_per_row_summary">Elija cuántos interruptores mostrar por fila</string>
     <string name="toggles_display_close">Cerrar</string>
     <string name="toggles_order_title">Orden de los interruptores</string>
     <string name="toggles_order_summary">Escoger el orden de visualización de los interruptores</string>
@@ -211,6 +223,28 @@
     <string name="toggle_text_color_title">Color del texto</string>
     <string name="toggle_favcontact_title">Contacto favorito</string>
     <string name="toggle_favcontact_summary">Elegir tu contacto favorito</string>
+    <string name="toggle_dialog_arrange_title">Configuración de interruptores</string>
+    <string name="add_toggles">Cambiar interruptores</string>
+    <string name="toggle_dialog_add_toggles">Seleccionar para agregar</string
+    <string name="toggle_swap_handle_side">Arrastrar a la derecha para manejar</string>	
+    <string name="toggles_style_title">Tipo de interruptores</string>
+    <string name="toggles_style_summary">Eliga que estilo quiere, tradicional, azulejos o deslizable</string>
+    <string name="toggle_style_tile">Azulejos</string>
+    <string name="toggle_style_traditional">Tradicional</string>
+    <string name="toggle_style_scrollable">Deslizable</string>
+    <string name="toggle_enable_fasttoggle_title">Permitir acceso rápido</string>
+    <string name="toggle_enable_fasttoggle_summary">Sobrescribe el comportamiento por defecto</string>
+    <string name="toggle_choose_fasttoggle_side_title">Elegir el Lado del Acceso Rápido </string>
+    <string name="toggle_choose_fasttoggle_side_summary">Elegir el lado de la zona de acceso rápido</string>
+    <string name="screenshot_delay_title">Retardo de captura de pantalla</string>
+    <string name="screenshot_delay_summary">Retardo para usar después de una presión larga en interruptor de captura de pantalla.</string>
+    <string name="time_2_seconds">2 Segundos</string>
+    <string name="time_3_seconds">3 Segundos</string>
+    <string name="time_4_seconds">4 Segundos</string>
+    <string name="time_5_seconds">5 Segundos</string>
+    <string name="time_6_seconds">6 Segundos</string>
+    <string name="time_7_seconds">7 Segundos</string>
+    <string name="time_8_seconds">8 Segundos</string>
 
     <!-- Statusbar | Clock -->
     <string name="clock_title_enable">Ubicación del reloj</string>
@@ -255,6 +289,11 @@
     <string name="toggle_ime">Teclado</string>
     <string name="toggle_battery">Bateria</string>
     <string name="toggle_brightness">Brillo</string>
+    <string name="toggle_sleep">Dormir</string>
+    <string name="toggle_powermenu">Menú de encendido</string>
+    <string name="toggle_sound_state">Sonido/Vibrar/Silencioso</string>
+    <string name="toggle_navbar_hide">Esconder automáticamente la barra de navegación</string>
+    <string name="toggle_quickrecord">Registro rápido</string>
 
     <!-- Statusbar | Battery -->
     <string name="battery_icon">Aspecto del indicador de batería</string>
@@ -347,6 +386,31 @@
     <string name="navbar_widgets_shiftLeft">Mover a la izquierda</string>
     <string name="navbar_widgets_shiftRight">Mover a la derecha</string>
     <string name="navbar_widgets_delete">Borrar widget</string>
+    <string name="navbar_buttons_instructions">Presione icono para seleccionar acción o icono personalizado</string>
+    <string name="navbar_title_menu">Opciones de botón</string>
+    <string name="navbar_actiontitle_menu">Acción: %1$s</string>
+    <string name="navbar_longpress_menu">Pulsación larga: %1$s</string>
+    <string name="navbar_icon_menu">Icono personalizado</string>
+    <string name="navbar_delete_menu">Borrar botón</string>
+    <string name="navigation_bar_menu_arrow_keys_title">Menu teclas de fechas</string>
+    <string name="navigation_bar_menu_arrow_keys_summary">Al marcar habilita las teclas de flecha en la barra de navegación mientras se escribe.</string>
+    <string name="navbar_color_cat">Color y transparencia</string>
+    <string name="navigation_bar_color_title">Color barra navegación</string>
+    <string name="navigation_bar_colorall_title">Colorear todos los botones</string>
+    <string name="navigation_bar_colorall_summary">Si se selecciona, los iconos personalizados serán coloreados</string>
+    <string name="navbar_hide">Opciones de ocultar NavBar</string>
+    <string name="navbar_hide_enable_title">Ocultar NavBar activada</string>
+    <string name="drag_handle_opacity_title">Arrastre el selector de opacidad</string>
+    <string name="drag_handle_width_title">Arrastre el selector del ancho</string>
+    <string name="title_navbar_timeout">Tiempo para ocultar NavBar</string>
+    <string name="summary_navbar_timeout">Tiempo de espera para ocultar NavBar</string>
+    <string name="hide_navbar_timeout_never">Nunca</string>
+    <string name="hide_navbar_timeout_1500">1.5 Segundos</string>
+    <string name="hide_navbar_timeout_3000">3 Segundos</string>
+    <string name="hide_navbar_timeout_5000">5 Segundos</string>
+    <string name="hide_navbar_timeout_10000">10 Segundos</string>
+    <string name="hide_navbar_timeout_15000">15 Segundos</string>
+    <string name="hide_navbar_timeout_30000">30 Segundos</string>
 
     <!-- Nav Ring Targets -->
     <string name="navbar_ring_cat">Accesos en barra de navegación</string>
@@ -382,6 +446,14 @@
     <string name="interface_navring">Accesos cargados</string>
     <string name="navbar_ring">Accesos personalizados</string>
     <string name="navring_enable_long">Activar presión larga para los accesos</string>
+    <string name="navring_target_info">Arrastre el dedo a los objetivos para asignar los accesos</string>
+    <string name="navring_short">Acción pulsación corta</string>
+    <string name="navring_long">Acción pulsación larga</string>
+    <string name="navring_icon">Icono personalizado</string>
+    <string name="navring_target_amount_text">Número actual de accesos</string>
+    <string name="navring_target_longpress_text">Estado de la pulsación larga</string>
+    <string name="navring_target_save">Accesos rápidos guardados</string>
+    <string name="navring_target_reset_message">¿Restablecer la configuración por defecto?</string>
 
     <!-- LED -->
     <string name="led_on">LED encendido</string>
