@@ -225,7 +225,7 @@
     <string name="toggle_favcontact_summary">Elegir tu contacto favorito</string>
     <string name="toggle_dialog_arrange_title">Configuración de interruptores</string>
     <string name="add_toggles">Cambiar interruptores</string>
-    <string name="toggle_dialog_add_toggles">Seleccionar para agregar</string
+    <string name="toggle_dialog_add_toggles">Seleccionar para agregar</string>
     <string name="toggle_swap_handle_side">Arrastrar a la derecha para manejar</string>	
     <string name="toggles_style_title">Tipo de interruptores</string>
     <string name="toggles_style_summary">Eliga que estilo quiere, tradicional, azulejos o deslizable</string>
@@ -245,6 +245,28 @@
     <string name="time_6_seconds">6 Segundos</string>
     <string name="time_7_seconds">7 Segundos</string>
     <string name="time_8_seconds">8 Segundos</string>
+    <string name="custom_toggle_cat">Interruptores personalizados</string>
+    <string name="custom_button_cat">Acciones interruptores personalizados</string>
+    <string name="advanced_toggle_title">Acciones Básicas o Avanzadas</string>
+    <string name="advanced_toggle_summaryon">Avanzadas (Acción presión larga o corta)</string>
+    <string name="advanced_toggle_summaryoff">Basicas (Solo presión larga)</string>
+    <string name="match_icon_action_title">Activar acción que aparece</string>
+    <string name="match_icon_action_summary">Es útil para alinear tarea para icono que se muestra, para su uso especifico</string>
+    <string name="collapse_bar_title">Cerrar barra de estado</string>
+    <string name="collapse_bar_summary">Barra de estado se cierra al finalizar la acción</string>
+    <string name="no_collapse">Nunca cerrar</string>
+    <string name="click_collapse">Un click corto</string>
+    <string name="long_collapse">Un click largo</string>
+    <string name="both_collapse">Tanto click corto o largo</string>
+    <string name="dclick_action_title">Acciones doble click</string>
+    <string name="dclick_action_summary">Cambiar estado haciendo doble click</string>
+    <string name="no_dclick">Ninguna acción</string>
+    <string name="back_one_dclick">Invertir estado</string>
+    <string name="state_one_dclick">Set to state one</string>
+    <string name="skip_back_dclick">Saltar hacia atrás (ninguna acción)</string>
+    <string name="skip_up_dclick">Saltar hacia adelante (ninguna acción)</string>
+    <string name="action_toggle_title">Acciones Interruptores</string>
+    <string name="action_toggle_summary">Accion de interruptores desde izquierda a derecha</string>
 
     <!-- Statusbar | Clock -->
     <string name="clock_title_enable">Ubicación del reloj</string>
