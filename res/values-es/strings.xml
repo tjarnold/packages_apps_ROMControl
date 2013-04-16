@@ -238,13 +238,6 @@
     <string name="toggle_choose_fasttoggle_side_summary">Elegir el lado de la zona de acceso rápido</string>
     <string name="screenshot_delay_title">Retardo de captura de pantalla</string>
     <string name="screenshot_delay_summary">Retardo para usar después de una presión larga en interruptor de captura de pantalla.</string>
-    <string name="time_2_seconds">2 Segundos</string>
-    <string name="time_3_seconds">3 Segundos</string>
-    <string name="time_4_seconds">4 Segundos</string>
-    <string name="time_5_seconds">5 Segundos</string>
-    <string name="time_6_seconds">6 Segundos</string>
-    <string name="time_7_seconds">7 Segundos</string>
-    <string name="time_8_seconds">8 Segundos</string>
     <string name="custom_toggle_cat">Interruptores personalizados</string>
     <string name="custom_button_cat">Acciones interruptores personalizados</string>
     <string name="advanced_toggle_title">Acciones Básicas o Avanzadas</string>
