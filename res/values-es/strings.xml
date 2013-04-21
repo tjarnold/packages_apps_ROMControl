@@ -7,6 +7,7 @@
     <string name="user_interface">Interfaz</string>
     <string name="cancel">Cancelar</string>
     <string name="ok">Aceptar</string>
+    <string name="save">Guardar</string>
     <string name="menu_main_activity_change_locale">En blanco!</string>
     <string name="header_statusbar">Barra de estado</string>
     <string name="header_navbar">Barra de navegación</string>
@@ -75,8 +76,8 @@
     <string name="title_show_navbar_hide">Mostrar interruptor de barra de navegación</string>
     <string name="summary_show_navbar_hide">Si marca esta opción mostrara los interruptores para habilitar la barra de navegación y barra de estado</string>
     <string name="title_show_volume_state_toggle">Mostrar estados de sonido</string>
-    <string name="summary_off_show_reboot_keyguard">Opción de reinicio no se mostrará en pantalla de bloqueo</string>
-    <string name="summary_on_show_reboot_keyguard">Opción de reinicio se mostrará en pantalla de bloqueo</string>
+    <string name="title_show_reboot_keyguard">Mostrar Reinicio en la Pantalla de Bloqueo</string>
+    <string name="summary_show_reboot_keyguard">Al habilitar mostrará las opciones de reinicio en la pantalla de bloqueo</string>
 
     <!-- Power Saving -->
     <string name="title_pref_powersaving_pref_mode">Activar ahorro de energía</string>
@@ -156,7 +157,7 @@
     <string name="show_overflow_toast_disable">El botón de menú puede ser visible hasta que se reinicien las aplicaciones</string>
     <string name="notification_show_wifi_ssid_title">Ver nombre de conección wifi</string>
     <string name="notification_show_wifi_ssid_summary">Mostrar el nombre de la conección actual de wifi</string>
-    <string name="rotate_270_title">>Permitir rotación de 270 grados</string>
+    <string name="rotate_270_title">Permitir rotación de 270 grados</string>
     <string name="rotate_270_summary">Permite a su dispositivo rotar 270 grados!</string>
     <string name="system_power_crt_screen_off_title">Efecto CRT al apagar pantalla</string>
     <string name="system_power_crt_screen_off_summary">La pantalla se animará con un haz de electrones cuando se apaga.</string>
@@ -165,7 +166,22 @@
     <string name="system_power_crt_mode_horizontal">Retrato horizontal</string>
     <string name="system_power_crt_mode_vertical">Retrato vertical</string>
     <string name="system_power_crt_mode_both">Depende de orientación</string>
-
+    <string name="set_custom_bootanimation">Definir...</string>
+    <string name="transparency_dialog_title">Ajustar transparencia</string>
+    <string name="transparency_dialog_linked_transparency">Enlazar barra de estado &amp; barra de navegación</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">Barra de estado y barra de navegación</string>
+    <string name="transparency_dialog_statusbar">Barra de estado</string>
+    <string name="transparency_dialog_navbar">Barra de navegación</string>
+    <string name="transparency_dialog_match_keyguard_alpha">Coincidir con la pantalla de bloqueo</string>
+    <string name="transparency_dialog_transparency">Pantalla de inicio</string>
+    <string name="transparency_dialog_transparency_keyguard">Pantalla de bloqueo</string>
+    <string name="brightness_slider_title">Regulador del Brillo en la Barra de Estado</string>
+    <string name="brightness_slider_summary">Le permite deslizar el dedo por la parte superior de la barra de estado para cambiar el brillo. No hace nada cuando el brillo automático está habilitado.</string>
+    <string name="longpress_to_kill">Pulsación larga en botón atrás para matar</string>
+    <string name="longpress_to_kill_summary">Mantener pulsado el botón atrás matara la aplicación actual</string>
+    <string name="wakeup_when_plugged_unplugged_title">Despertar el dispositivo mientras se carga</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Despertar dispositivo al conectar y desconectar el cargador.</string>
+    
     <!-- LCD Density -->
     <string name="lcd_density_title">Densidad LCD</string>
     <string name="lcd_density_summary">Desconocida</string>
@@ -426,6 +442,8 @@
     <string name="hide_navbar_timeout_10000">10 Segundos</string>
     <string name="hide_navbar_timeout_15000">15 Segundos</string>
     <string name="hide_navbar_timeout_30000">30 Segundos</string>
+    <string name="statusbar_hide_title">Ocultar barra de estado</string>
+    <string name="statusbar_hide_summary">Al seleccionar oculta completamente la barra de estado</string>
 
     <!-- Nav Ring Targets -->
     <string name="navbar_ring_cat">Accesos en barra de navegación</string>
@@ -609,7 +627,16 @@
     <string name="icon_picker_system_icons_title">Iconos del sistema</string>
     <string name="icon_picker_aokp_icons_title">Iconos AOKP</string>
     <string name="icon_picker_gallery_title">Galeria</string>
-
+    <string name="lockscreen_options_info">Toque el texto para recibir un resúmen de cada opción</string>
+    <string name="lockscreen_hide_initial_page_hints_title">Ocultar sugerencias iniciales en la página</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">Establecer si los consejos para los widgets de izquierda y derecha se muestra cuando la pantalla está encendida</string>
+    <string name="lockscreen_minimize_challenge_title">Minimizar el candado</string>
+    <string name="lockscreen_minimize_challenge_summary">Esto permite que el dispositivo se desbloquee con los widgets maximizados, con pulsar un rato el icono de bloqueo (candado)</string>
+    <string name="lockscreen_use_widget_container_carousel_title">Utilice Carrusel de Widgets</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Utilizar animación de carrusel al cambiar entre los widgets de la pantalla de bloqueo</string>
+    <string name="lockscreen_target_longpress_text">Estado pulsación larga</string>
+    <string name="lockscreen_target_longpress_summary">Habilita opción pulsación larga para ver acceso directos de la pantalla de bloqueo</string>
+    
     <string name="aokp_icon_picker_aokp">AOKP Now</string>
     <string name="aokp_icon_picker_browser">Navegador</string>
     <string name="aokp_icon_picker_calendar">Calendario</string>
