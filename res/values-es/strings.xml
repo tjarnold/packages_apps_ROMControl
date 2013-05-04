@@ -239,7 +239,7 @@
     <string name="toggle_text_color_title">Color del texto</string>
     <string name="toggle_favcontact_title">Contacto favorito</string>
     <string name="toggle_favcontact_summary">Elegir tu contacto favorito</string>
-    <string name="toggle_dialog_arrange_title">Configuración de interruptores</string>
+    <string name="toggle_dialog_arrange_title">Ajuste interruptores</string>
     <string name="add_toggles">Cambiar interruptores</string>
     <string name="toggle_dialog_add_toggles">Seleccionar para agregar</string>
     <string name="toggle_swap_handle_side">Arrastrar a la derecha para manejar</string>	
@@ -276,6 +276,15 @@
     <string name="skip_up_dclick">Saltar hacia adelante (ninguna acción)</string>
     <string name="action_toggle_title">Acciones Interruptores</string>
     <string name="action_toggle_summary">Accion de interruptores desde izquierda a derecha</string>
+    <string name="custom_help_title">Cómo funciona</string>
+    <string name="custom_toggle_desc">Cada toque hace que el interruptor se mueva a la siguiente acción. Si tu interruptor no tiene una acción asignada y sin icono perzonalizado, el icono de pulsación larga sera usado. Esto es util para usuarios que quieren acciones ciclicas sin lanzar nada.</string>
+    <string name="custom_help_summary">Haga clic para obtener más información</string>
+    <string name="boot_action_title">Estado en el arranque</string>
+    <string name="boot_action_summary">Pondrá en marcha un estado en el arranque</string>
+    <string name="choose_action_title">Elegir acceso</string>
+    <string name="choose_action_short_title">Elegir acceso pulsación corta</string>
+    <string name="choose_action_long_title">Elegir acceso pulsación larga</string>
+    <string name="action_long_save">establecer como pulsación larga</string>
 
     <!-- Statusbar | Clock -->
     <string name="clock_title_enable">Ubicación del reloj</string>
@@ -1021,4 +1030,44 @@
     <!-- haptic feedback on toggle press -->
     <string name="toggles_enable_haptic_feedback_title">Activar haptic feedback</string>
     <string name="toggles_enable_haptic_feedback_summary">Vibrar al presionar los toggles</string>
+    <!-- Ribbon -->
+    <string name="ribbon_dialog_arrange_title">Distribución</string>
+    <string name="menu_ribbon_reset">Restablecer ribbon</string>
+    <string name="menu_ribbon_rearrange">Reorganizar ribbon</string>
+    <string name="ribbon_instructions">Pulse el icono para seleccionar acciones o eliminar</string>
+    <string name="ribbon_targets_cat">Opciones de ribbon</string>
+    <string name="enable_ribbon_text_title">Mostrar nombre aplicación</string>
+    <string name="enable_ribbon_vibrate_title">Vibrar al pulsar área de deslice</string>
+    <string name="enable_ribbon_text_summary">Habilitar el nombre de la aplicación debajo del icono</string>
+    <string name="ribbon_icon_vibrate_title">Vibrar al tocar acción</string>
+    <string name="ribbon_icon_space_title">Separación de iconos</string>
+    <string name="ribbon_icon_size_title">Tamaño de icono</string>
+    <string name="ribbon_icon_size_summary">Ajuste el tamaño de los iconos</string>
+    <string name="ribbon_lockscreen">Ribbon de pantalla de bloqueo</string>
+    <string name="ribbon_notifications">Ribbon de notificaciones</string>
+    <string name="ribbon_quicksettings">Ribbon de ajuste rápidos</string>
+    <string name="ribbon_swipe_left">Ribbon deslizable desde izquierda</string>
+    <string name="ribbon_swipe_right">Ribbon deslizable desde derecha</string>
+    <string name="ribbon_swipe_bottom">Ribbon deslizable desde abajo</string>
+    <string name="clone_title">Elija ribbon para clonar</string>
+    <string name="icon_size_normal">Normal</string>
+    <string name="icon_size_20">Medio</string>
+    <string name="icon_size_15">Pequeño</string>
+    <string name="ribbon_left_enable_title">Habilitar deslizar desde la izquierda</string>
+    <string name="ribbon_right_enable_title">Habilitar deslizar desde la derecha</string>
+    <string name="ribbon_bottom_enable_title">Habilitar deslizar desde abajo</string>
+    <string name="ribbon_bottom_warning_title">No puedes usar deslizar desde abajo con barra de navegación activada, debe usar auto-ocultar barra de navegación o ocultar manualmente.</string>
+    <string name="ribbon_button_colorize_title">Color del icono igual que el texto</string>
+    <string name="ribbon_color_title">Color de ribbon deslizable</string>
+    <string name="text_color_title">Color texto de etiqueta de aplicación</string>
+    <string name="ribbon_opacity_title">Opacidad de ribbon deslizable</string>
+    <string name="timeout_spinner_title">Tiempo de espera automático de ribbon</string>
+    <string name="ribbon_drag_handle_width_title">Largo de barra de desplazamiento</string>
+    <string name="ribbon_drag_handle_height_title">Ancho de barra de desplazamiento</string>
+    <string name="ribbon_insert">Insertar Botón</string>
+    <string name="ribbon_handle_location_title">Lugar de barra de desplazamiento del Ribbon</string>
+    <string name="ribbon_icon_location_title">Ordenar iconos</string>
+    <string name="center">Centrado</string>
+    <string name="top">Arriba</string>
+    <string name="bottom">Abajo</string>
 </resources>
