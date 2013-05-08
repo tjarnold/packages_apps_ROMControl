@@ -158,6 +158,9 @@ public class RibbonTargets extends AOKPPreferenceFragment implements
     private IntentFilter filter;
     private RibbonDialogReceiver reciever;
 
+    BroadcastReceiver mReceiver;
+    ArrayList<String> allToggles;
+
     private String[] mActions;
     private String[] mActionCodes;
 
@@ -198,6 +201,21 @@ public class RibbonTargets extends AOKPPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mReceiver = new BroadcastReceiver() {
+
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if (intent.hasExtra("toggle_bundle")) {
+                    onTogglesUpdate(intent.getBundleExtra("toggle_bundle"));
+                }
+            }
+        };
+        mContext.registerReceiver(mReceiver,
+                new IntentFilter("com.android.systemui.statusbar.toggles.ACTION_BROADCAST_TOGGLES"));
+
+        Intent request = new Intent("com.android.systemui.statusbar.toggles.ACTION_REQUEST_TOGGLES");
+        mContext.sendBroadcast(request);
+
         setTitle(R.string.title_ribbon);
 
         PreferenceScreen prefs = getPreferenceScreen();
@@ -595,9 +613,24 @@ public class RibbonTargets extends AOKPPreferenceFragment implements
                     fragment.show(getFragmentManager(), "rearrange");
                 }
                 return true;
+            case R.id.ribbon_toggles:
+                if (arrayNum == 2 || arrayNum == 4) {
+                    ArrayList<String> mToggles = Settings.System.getArrayList(mContentRes, Settings.System.SWIPE_RIBBON_TOGGLES[ribbonNumber]);
+                    ArrangeRibbonTogglesFragment fragment = new ArrangeRibbonTogglesFragment();
+                    fragment.setResources(mContext, mContentRes, allToggles,
+                        mToggles, ribbonNumber);
+                    fragment.show(getFragmentManager(), "toggles");
+                } else {
+                    Toast.makeText(mContext, R.string.menu_ribbon_toggles_error, Toast.LENGTH_LONG).show();
+                }
+                return true;
             default:
                 return super.onContextItemSelected(item);
         }
+    }
+
+    private void onTogglesUpdate(Bundle toggleInfo) {
+        allToggles = toggleInfo.getStringArrayList("toggles");
     }
 
     @Override
@@ -609,6 +642,15 @@ public class RibbonTargets extends AOKPPreferenceFragment implements
     public void onResume() {
         super.onResume();
         refreshButtons();
+    }
+
+    @Override
+    public void onDestroy() {
+        if (mReceiver != null) {
+            mContext.unregisterReceiver(mReceiver);
+            mReceiver = null;
+        }
+        super.onDestroy();
     }
 
     private void updateSwitches() {
