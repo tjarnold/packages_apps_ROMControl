@@ -260,6 +260,15 @@
     <string name="transparency_dialog_transparency">ホーム画面での不透明度</string>
     <string name="transparency_dialog_transparency_keyguard">ロック画面での不透明度</string>
     <string name="transparency_dialog_lockscreen">ロック画面</string>
+    <string name="statusbar_behaviour">ステータスバー動作</string>
+    <string name="statusbar_visible">ステータスバーを表示</string>
+    <string name="statusbar_hide_title">ステータスバーを隠す</string>
+    <string name="statusbar_hide_summary">3つのステータスバー動作を選ぶことができます</string>
+    <string name="statusbar_notification">通知</string>
+    <string name="statusbar_pulldown">プルダウンステータスバー</string>
+    <string name="statusbar_pulldown_notification">プルダウン・通知</string>
+    <string name="hidden_statusbar_pulldown_timeout_title">ステータスバープルダウン表示タイムアウト時間</string>
+    <string name="hidden_statusbar_pulldown_timeout_summary">ステータス画面を隠すまでの時間です</string>
 
     <!-- LCD Density -->
     <string name="lcd_density_title">画面密度の変更</string>
