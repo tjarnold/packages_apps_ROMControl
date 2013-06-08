@@ -21,6 +21,7 @@ public class PowerMenu extends AOKPPreferenceFragment implements OnPreferenceCha
     private static final String PREF_AIRPLANE_TOGGLE = "show_airplane_toggle";
     private static final String PREF_NAVBAR_HIDE = "show_navbar_hide";
     private static final String PREF_VOLUME_STATE_TOGGLE = "show_volume_state_toggle";
+    private static final String PREF_PROFILES_TOGGLE = "show_profiles_toggle";
     private static final String PREF_REBOOT_KEYGUARD = "show_reboot_keyguard";
 
     //SwitchPreference mShowPowerSaver;
@@ -29,6 +30,7 @@ public class PowerMenu extends AOKPPreferenceFragment implements OnPreferenceCha
     SwitchPreference mShowAirplaneToggle;
     SwitchPreference mShowNavBarHide;
     SwitchPreference mShowVolumeStateToggle;
+    SwitchPreference mShowProfilesToggle;
     SwitchPreference mShowRebootKeyguard;
 
     @Override
@@ -76,6 +78,11 @@ public class PowerMenu extends AOKPPreferenceFragment implements OnPreferenceCha
                 Settings.System.POWER_DIALOG_SHOW_VOLUME_STATE_TOGGLE, true));
         mShowVolumeStateToggle.setOnPreferenceChangeListener(this);
 
+        mShowProfilesToggle = (SwitchPreference) findPreference(PREF_PROFILES_TOGGLE);
+        mShowProfilesToggle.setChecked(Settings.System.getBoolean(mContentRes,
+                Settings.System.POWER_DIALOG_SHOW_PROFILES_TOGGLE, true));
+        mShowProfilesToggle.setOnPreferenceChangeListener(this);
+
         mShowRebootKeyguard = (SwitchPreference) findPreference(PREF_REBOOT_KEYGUARD);
         mShowRebootKeyguard.setChecked(Settings.System.getBoolean(mContentRes,
                 Settings.System.POWER_DIALOG_SHOW_REBOOT_KEYGUARD, true));
@@ -113,6 +120,11 @@ public class PowerMenu extends AOKPPreferenceFragment implements OnPreferenceCha
         } else if (preference == mShowVolumeStateToggle) {
             Settings.System.putBoolean(mContentRes,
                     Settings.System.POWER_DIALOG_SHOW_VOLUME_STATE_TOGGLE,
+                    (Boolean) value);
+            return true;
+        } else if (preference == mShowProfilesToggle) {
+            Settings.System.putBoolean(mContentRes,
+                    Settings.System.POWER_DIALOG_SHOW_PROFILES_TOGGLE,
                     (Boolean) value);
             return true;
         } else if (preference == mShowRebootKeyguard) {

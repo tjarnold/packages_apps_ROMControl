@@ -21,6 +21,10 @@
         android:title="@string/title_show_volume_state_toggle" />
 
     <SwitchPreference
+        android:key="show_profiles_toggle"
+        android:title="@string/title_show_profiles_toggle" />
+
+    <SwitchPreference
         android:key="show_navbar_hide"
         android:title="@string/title_show_navbar_hide"
         android:summary="@string/summary_show_navbar_hide" />
