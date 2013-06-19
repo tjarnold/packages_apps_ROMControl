@@ -989,6 +989,11 @@
     <string name="rb_battery1">RootBox CircleMod</string>
     <string name="rb_battery2">RootBox SquareMod</string>
     <string name="rb_battery3">RootBox SpeedoMeter</string>
+    <string name="rb_battery4">RootBox Racing</string>
+    <string name="rb_battery5">RootBox Gauge</string>
+    <string name="rb_battery6">RootBox Planet</string>
+    <string name="rb_battery7">RootBox Slider</string>
+    <string name="rb_battery8">RootBox Brick</string>
 
 
     <!-- NavBar -->
