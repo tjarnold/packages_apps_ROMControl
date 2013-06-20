@@ -90,9 +90,11 @@
     <string name="title_show_torch_toggle">Torch</string>
     <string name="title_show_airplane_toggle">Airplane mode</string>
     <string name="title_show_navbar_hide">System Bar toggles</string>
-    <string name="summary_show_navbar_hide">Enabling this will show toggles that hide the NavBar and Statusbar</string>
+    <string name="summary_show_navbar_hide">Enabling this will show toggles to hide the statusbar</string>
     <string name="title_show_volume_state_toggle">Volume states</string>
     <string name="title_show_profiles_toggle">Profiles</string>
+    <string name="title_show_expanded_desktop">Expanded desktop</string>
+    <string name="summary_show_expanded_desktop">Adds option in power menu to hide status and navigation bar.</string>
     <string name="title_show_reboot_keyguard">Reboot on lockscreen</string>
     <string name="summary_show_reboot_keyguard">Enabling this will show reboot options while on lockscreen</string>
 

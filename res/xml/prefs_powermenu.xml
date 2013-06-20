@@ -25,6 +25,11 @@
         android:title="@string/title_show_profiles_toggle" />
 
     <SwitchPreference
+	android:key="show_expanded_desktop"
+	android:title="@string/title_show_expanded_desktop"
+        android:summary="@string/summary_show_expanded_desktop" />
+
+    <SwitchPreference
         android:key="show_navbar_hide"
         android:title="@string/title_show_navbar_hide"
         android:summary="@string/summary_show_navbar_hide" />
