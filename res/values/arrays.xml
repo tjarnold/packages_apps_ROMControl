@@ -238,6 +238,7 @@
         <item>@string/rb_battery6</item>
         <item>@string/rb_battery7</item>
         <item>@string/rb_battery8</item>
+        <item>@string/rb_battery9</item>
         <item>@string/dont_show</item>
     </string-array>
     <string-array name="battery_icon_values" translatable="false">
@@ -254,6 +255,7 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
+        <item>13</item>
     </string-array>
 
     <!-- NavBar -->
