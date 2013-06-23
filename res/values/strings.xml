@@ -218,9 +218,6 @@
     <string name="rotate_270_summary">Checking this allows your device to rotate to the right</string>
     <string name="ram_bar">Recents RAM bar</string>
     <string name="ram_bar_summary">Shows RAM usage in the Recent Apps window</string>
-    <string name="longpress_to_kill">Hardware Back-to-kill</string>
-    <string name="longpress_to_kill_summary">Holding the hardware Back button will kill the activity in the foreground
-    </string>
     <string name="tablet_ui">Force Tablet UI</string>
     <string name="tablet_ui_summary">This will switch to Tablet UI (requires reboot)</string>
     <string name="hide_extras">Hide Extras</string>
